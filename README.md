@@ -1,5 +1,9 @@
 # Mase3206 Tap
 
+## Formulae
+
+- [`past`](https://github.com/hypercomrade/past) - HEAD-only
+
 ## How do I install these formulae?
 
 `brew install mase3206/tap/<formula>`
