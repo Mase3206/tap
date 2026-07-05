@@ -9,12 +9,6 @@ class Past < Formula
 
   depends_on "rust" => :build
 
-  # Additional dependency
-  # resource "" do
-  #   url ""
-  #   sha256 ""
-  # end
-
   def install
     system "cargo", "install", *std_cargo_args
   end
