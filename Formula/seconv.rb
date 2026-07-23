@@ -19,6 +19,12 @@ class Seconv < Formula
     bin.install "src/seconv/bin/Release/net10.0/osx-arm64/publish/seconv" => "seconv"
   end
 
+  livecheck do
+    url "https://github.com/SubtitleEdit/subtitleedit.git"
+    strategy :github_releases
+	regex(/([0-9]\.[0-9]\.[0-9])(?:-(beta|rc)[0-9]{0-2}){0}/)
+  end
+
   test do
     # `test do` will create, run in and delete a temporary directory.
     #
