@@ -2,8 +2,8 @@
 #                https://docs.brew.sh/Adding-Software-to-Homebrew#cask-stanzas
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 cask "subtitleedit@beta" do
-  version "5.1.0-beta11"
-  sha256 "829ff24e39d03a8da682c48ccf3465920832041e7ec053890bd4d4d8707162eb"
+  version "5.1.0-rc13"
+  sha256 "ce0aa9a7256b1f152bac8e26016a620b5d11c3fbc728359b03dafb7003eac93a"
 
   url "https://github.com/SubtitleEdit/subtitleedit/releases/download/v#{version}/SubtitleEdit-macOS-ARM64.dmg"
   name "SubtitleEdit (beta)"
@@ -14,7 +14,7 @@ cask "subtitleedit@beta" do
   livecheck do
     url "https://github.com/SubtitleEdit/subtitleedit.git"
     # Only include beta versions
-    regex(/([0-9]\.[0-9]\.[0-9]-beta[0-9]{0,2})/i)
+    regex(/([0-9]\.[0-9]\.[0-9]-(beta|rc)[0-9]{0,2})/i)
   end
 
   conflicts_with cask: "subtitleedit"
